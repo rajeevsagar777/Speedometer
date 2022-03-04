@@ -1,101 +1,99 @@
-.sp-logo {
-  height: 210px;
-  width: 350px;
-}
-@media screen and (min-width: 768px) {
-  .sp-logo {
-    height: 280px;
-    width: 450px;
-  }
+.speedometer-app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #07080c;
+  height: 100vh;
 }
 
-.content-container {
+.speedometer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.speed-condition {
-  font-size: 25px;
-  font-family: 'Roboto';
+.heading {
   color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-style: italic;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
-  .speed-condition {
+  .heading {
+    font-size: 48px;
+  }
+}
+
+.speedometer-image {
+  width: 300px;
+  height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .speedometer-image {
+    width: 700px;
+    height: 300px;
+  }
+}
+
+.speed-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .speed-text {
     font-size: 32px;
   }
 }
 
-.actual-speed {
-  font-size: 28px;
-  font-family: 'Roboto';
-  color: #ffffff;
-}
-@media screen and (min-width: 768px) {
-  .actual-speed {
-    font-size: 34px;
-  }
-}
-
-.accelerate-btn {
-  font-size: 12px;
-  font-family: 'Roboto';
-  color: #ffffff;
-  background-color: #0b69ff;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-width: 0px;
-  border-radius: 5px;
-  margin: 10px;
-  cursor: pointer;
-  outline: none;
-}
-
-@media screen and (min-width: 768px) {
-  .accelerate-btn {
-    font-size: 14px;
-  }
-}
-
-.applybrake-btn {
-  font-size: 12px;
-  font-family: 'Roboto';
+.speed-limits {
   color: #cbd5e1;
-  background-color: transparent;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-width: 2px solid #cbd5e1;
-  border-radius: 5px;
-  margin: 10px;
-  cursor: pointer;
-  outline: none;
-}
-@media screen and (min-width: 768px) {
-  .applybrake-btn {
-    font-size: 14px;
-  }
-}
-
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.description {
-  font-size: 15px;
   font-family: 'Roboto';
-  color: #94a3b8;
+  font-size: 12px;
+  margin-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
-  .description {
+  .speed-limits {
     font-size: 16px;
   }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 8px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.accelerate-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.apply-brake-button {
+  color: #94a3b8;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid #94a3b8;
 }
